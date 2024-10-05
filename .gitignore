@@ -7,7 +7,7 @@ __pycache__/
 *.so
 .csv .gitignore
 /data
-
+/scripts/mlruns
 # Distribution / packaging
 .Python
 build/
