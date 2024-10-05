@@ -8,6 +8,7 @@ __pycache__/
 .csv .gitignore
 /data
 /scripts/mlruns
+/models
 # Distribution / packaging
 .Python
 build/
