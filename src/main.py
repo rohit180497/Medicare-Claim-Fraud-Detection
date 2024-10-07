@@ -7,7 +7,7 @@ import os
 print(os.getcwd())
 
 # Load your pre-trained model (update the path as necessary)
-model = joblib.load("../models/fraud_claim_logistic_model.pkl")  # Update the path
+model = joblib.load("fraud_claim_logistic_model.pkl")  # Update the path
 
 app = FastAPI()
 

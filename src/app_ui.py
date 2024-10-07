@@ -43,6 +43,8 @@ if st.button('Predict'):
     # Display the prediction result
     if response.status_code == 200:
         result = response.json()['fraud_risk_category']
+        probability = response.json()['prediction_probability']
         st.success(f"Fraud Risk Category: {result}")
+        st.success(f"The probability of the claim being fraudulent is: {round(probability, 3)*100}{'%'}")
     else:
         st.error(f"Error: {response.status_code} - {response.text}")
