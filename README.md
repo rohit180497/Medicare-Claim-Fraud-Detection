@@ -2,9 +2,11 @@
 
 Medicare fraud is a significant issue in healthcare, costing billions of dollars each year. Fraudulent claims burden the system, leading to financial losses and undermining trust in medical services. Detecting fraudulent Medicare claims early and accurately is critical for reducing these financial impacts and ensuring that legitimate claims are processed efficiently. The goal is to leverage advanced data analysis techniques, feature engineering, and predictive algorithms to identify suspicious patterns that may indicate fraudulent activity.
 
-**Data:** Medicare claims dataset (https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files)
+**Data:** 
+Medicare claims dataset (https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files)
 
-**Project Overview**
+## Project Overview
+
 This project uses logistic regression to classify claims as fraudulent or non-fraudulent. The model achieves a recall score of 65% and is deployed on AWS Elastic Container Service (ECS) with Docker. The front-end is developed using Streamlit, while FastAPI handles the backend API for prediction services.
 
 ## Technologies Used
