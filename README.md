@@ -20,15 +20,15 @@ This project uses logistic regression to classify claims as fraudulent or non-fr
 
 ![**High Level Architecture**](architecture/architecture.jpg)
 
-User Input: User interacts with the Streamlit web UI for claim data entry.
+**User Input:** User interacts with the Streamlit web UI for claim data entry.
 
-Backend API: FastAPI processes the input, triggering the fraud prediction model.
+**Backend API:** FastAPI processes the input, triggering the fraud prediction model.
 
-ML Model: Logistic Regression model, loaded via MLflow, predicts if the claim is fraudulent.
+**ML Model:** Logistic Regression model, loaded via MLflow, predicts if the claim is fraudulent.
 
-Storage: All processed data is stored in AWS S3.
+**Storage:** All processed data is stored in AWS S3.
 
-Deployment: The application is dockerized and deployed on AWS ECS.
+**Deployment:** The application is dockerized and deployed on AWS ECS.
 
 ## Installation
 
