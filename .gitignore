@@ -9,6 +9,8 @@ __pycache__/
 /data
 /scripts/mlruns
 /models
+/reports
+.pptx .gitignore
 # Distribution / packaging
 .Python
 build/
