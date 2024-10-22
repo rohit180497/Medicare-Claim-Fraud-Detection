@@ -20,7 +20,7 @@ This project uses logistic regression to classify claims as fraudulent or non-fr
 
 ## Architecture
 
-![**High Level Architecture**](architecture/architecture.jpg)
+![**High Level Architecture**](architecture/architecture.png)
 
 **User Input:** User interacts with the Streamlit web UI for claim data entry.
 
