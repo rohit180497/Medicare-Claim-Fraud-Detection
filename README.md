@@ -12,7 +12,7 @@ This project uses logistic regression to classify claims as fraudulent or non-fr
 ## Technologies Used
 
 1. Machine Learning: Logistic Regression
-2. Frontend: Streamlit (for web UI)
+2. Frontend: Streamlit (for frontend Web UI)
 3. Backend: FastAPI (for API services)
 4. Containerization: Docker
 5. Cloud: AWS ECS, AWS S3
