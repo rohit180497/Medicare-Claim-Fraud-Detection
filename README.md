@@ -96,4 +96,4 @@ This project is deployed using AWS Elastic Container Service (ECS) with Docker. 
 - Capture Rate: 72% in the top 3 percentile.
 
 ## Demo Video
-![Medicare Fraud Detection Interface AWS] (video/Video_Medicare_Fraud_Detection_Interface.gif)
+![Medicare Fraud Detection Interface AWS](video/Video_Medicare_Fraud_Detection_Interface.gif)
