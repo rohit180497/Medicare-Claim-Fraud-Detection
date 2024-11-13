@@ -94,3 +94,8 @@ This project is deployed using AWS Elastic Container Service (ECS) with Docker. 
 - Metric: Recall (65%)
 
 - Capture Rate: 72% in the top 3 percentile.
+
+## Demo Video
+<video src="video/Video_Medicare_Fraud_Detection_Interface.mp4" controls="controls" style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
