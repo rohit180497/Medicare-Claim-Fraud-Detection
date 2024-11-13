@@ -6,19 +6,17 @@ import joblib
 import os
 print(os.getcwd())
 
-# Load your pre-trained model (update the path as necessary)
-model = joblib.load("fraud_claim_logistic_model.pkl")  # Update the path
-
+# Load your pre-trained model 
+model = joblib.load("fraud_claim_logistic_model.pkl") 
 app = FastAPI()
 
 def categorize_probabilities(prob_column):
-    # Convert the probability to a pandas Series if it is not already
+    # Convert the probability to a pandas Series 
     prob_series = pd.Series(prob_column)
     
     # Apply the categorization based on predefined conditions
     return pd.cut(prob_series, bins=[0, 0.148682, 0.354855, 1.0], labels=['Low', 'Medium', 'High'], right=False)
 
-# Define the request body structure
 # Define the input data schema
 class ClaimData(BaseModel):
     Total_Claims_Per_Bene: float
@@ -38,7 +36,7 @@ async def read_root():
 
 @app.post("/predict")
 async def predict_claim(data: ClaimData):
-    # Remove ClaimID and Provider, use only the necessary features for prediction
+    # Removing ClaimID and Provider, use only the necessary features for prediction
     input_data = np.array([[
         data.Total_Claims_Per_Bene,
         data.TimeInHptal,
@@ -54,8 +52,8 @@ async def predict_claim(data: ClaimData):
     ]])
 
     try:
-        # Perform the prediction using the model, predict_proba gives probabilities
-        prediction_prob = model.predict_proba(input_data)[0][1]  # Get the probability of class 1 (Fraud)
+        # Perform the prediction using the model
+        prediction_prob = model.predict_proba(input_data)[0][1]  
 
         # Categorize the probability into Low, Medium, High
         fraud_risk_category = categorize_probabilities([prediction_prob])[0]
